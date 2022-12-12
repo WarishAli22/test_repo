@@ -14,6 +14,8 @@ const port = 3000;
  app.use('/assets', express.static('assets'));
 
 
+
+
 //Gives access to views folder from any path
 // const path = require('path')
 // app.set('views', path.join(__dirname, 'views'));
@@ -35,7 +37,7 @@ const db = sql.createPool({
 
 db.getConnection((error, connection)=>{
   if(error) throw error;
-  console.log('Database Connected');
+  console.log('Database Connected broooo');
 })
 
 //GET REQUESTS
